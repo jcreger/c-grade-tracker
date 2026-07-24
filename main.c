@@ -59,8 +59,6 @@ int main() {
     i32 gradeSize = 0;
     char keyPress;
     char grade;
-    i32 gradeMax = 0;
-    i32 gradeMin = 100;
 
     while (active == 1) {
         system("cls");
@@ -106,7 +104,7 @@ int main() {
                             result = scanf("%d", &input);
                             if (result != 0 && input <= gradeSize &&
                                 input > 0) {
-                                for (i32 i = input - 1; i < 9; i++) {
+                                for (i32 i = input - 1; i < gradeSize - 1; i++) {
                                     grades[i] = grades[i + 1];
                                 }
                                 gradeSize--;
@@ -161,6 +159,8 @@ int main() {
                 break;
             case 4:
                 if (gradeSize > 0) {
+                    i32 gradeMin = grades[0];
+                    i32 gradeMax = grades[0];
                     for (i32 i = 0; i < gradeSize; i++) {
                         if (grades[i] < gradeMin) {
                             gradeMin = grades[i];
@@ -179,8 +179,6 @@ int main() {
                     printf("No grades\n");
                     delay(1);
                 }
-                gradeMax = 0;
-                gradeMin = 100;
                 break;
             case 5:
                 printf("Quitting...\n");
