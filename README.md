@@ -6,15 +6,15 @@ Command-line grade tracker written in C for Windows. Served as an introduction i
 
 The program will launch into a command-line menu with 5 selectable options. You can select an option by entering the corresponding number then enter.
 
-1. Add a Grade  
+1. **Add a Grade:**  
    Prompts you to enter a grade ranging from 0 to 100.
-2. View Grades  
+2. **View Grades:**  
    Displays a list of all the stored grades and allows you to delete a grade. To delete a grade enter its corresponding number.
-3. Calculate Grades  
+3. **Calculate Grades:**  
    Displays the average of all the stored grades, and gives you a corresponding letter based on the percentage.
-4. Calculate High/Low  
+4. **Calculate High/Low:**  
    Calculates the highest and lowest grades that have been entered and outputs them to console.
-5. Quit  
+5. **Quit:**  
    Exits the program.
 
 ## Notes
